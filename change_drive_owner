@@ -1,0 +1,1 @@
+sudo chown --recursive [your_user_name]:[your_user_name] [path_to_drive]
