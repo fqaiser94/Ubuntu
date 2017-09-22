@@ -1,5 +1,6 @@
 # enable 32 bit architecture on Ubuntu using the dpkg command 
 # needs to be done if you are using 64 bit version of Ubuntu Linux
+
 sudo dpkg --add-architecture i386
 
 # Add Ubuntu Wine ppa Repository
@@ -12,32 +13,24 @@ sudo apt-get update
 
 # Install Wine on Ubuntu 16.04
 
-Now we can install Wine in Ubuntu 16.04 using apt-get install command. In the Linux terminal type,
+# Now we can install Wine in Ubuntu 16.04 using apt-get install command. In the Linux terminal type,
+
 sudo apt-get install --install-recommends winehq-devel
-This will install the Wine on Ubuntu Linux 16.04.
-Install Wine on Ubuntu 16.04
-Step Three
-Configure Wine on Ubuntu 16.04
 
-Now we need to configure wine using winecfg command. You should run the winecfg command command using your Linux user account (not as root user), Also you cannot run winecfg with the sudo command.
-So in the Linux terminal and type,
+# Now we need to configure wine using winecfg command. 
+# You should run the winecfg command command using your Linux user account (not as root user)
+# Also you cannot run winecfg with the sudo command.
+# So in the Linux terminal and type,
+
 winecfg
-After you run the winecfg command, you will be prompted to install one or two packages that need to run windows application properly on Ubuntu Linux (This includes Wine mono and Wine Gecko).
-configure wine using winecfg command
-You can install these packages by simply clicking on install button once you prompted.
-Finally select the Windows version from the dropdown menu (You can select Windows 7 or Windows 10).
-select the ubuntu wine Windows version
-And we are done, now we can install Windows softwares on Ubuntu 16.04 using wine Windows program loader.
-Install Windows Softwares on Ubuntu Wine
 
-To install any windows software, right click on the .exe file and select Open with Wine Windows program loader. For example, if you want to install notepad++ on Ubuntu,
-First download the notepad++ installer(.exe file) to your hard drive.
-Then, right click on the notepad++ installer and select Open with Wine Windows program loader.
-Install Windows Softwares on Ubuntu Wine
-This will launch the notepad++ installation wizard, just like in Microsoft Windows.
-ubuntu notepad ++ installer 
-Summary - Install Wine Ubuntu 16.04
-In this tutorial we learned how to Install Wine on Ubuntu 16.04 Desktop operating System.
-First, we configured Ubuntu Wine ppa Repository.
-Then, we installed wine on Ubuntu 16.04 using apt-get install command.
-Finally, we executed the winecfg command to configure Ubuntu Wine.
+# After you run the winecfg command, you will be prompted to install one or two packages that need to run windows application properly on Ubuntu Linux (This includes Wine mono and Wine Gecko).
+# You can install these packages by simply clicking on install button once you prompted.
+# Finally select the Windows version from the dropdown menu (You can select Windows 7 or Windows 10). 
+# And we are done, now we can install Windows softwares on Ubuntu 16.04 using wine Windows program loader.
+
+# To install any windows software, right click on the .exe file and select Open with Wine Windows program loader. For example, if you want to install notepad++ on Ubuntu,
+# First download the notepad++ installer(.exe file) to your hard drive.
+# Then, right click on the notepad++ installer and select Open with Wine Windows program loader.
+# Install Windows Softwares on Ubuntu Wine
+# This will launch the notepad++ installation wizard, just like in Microsoft Windows.
