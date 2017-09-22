@@ -106,14 +106,12 @@ sudo apt-get install git
 
 ### Spark ###
 
-#Step 3: Install Spark
-# Next its time to install Spark.
+# Go to home directory
+cd ~
 
-# Go to 																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
-# Download a pre-built for Hadoop 2.7 version of Spark (preferably Spark 2.0 or later). 
-# Download the .tgz file and remember where you save it on your computer.
+# Download a pre-built for Hadoop 2.7 version of Spark (preferably Spark 2.0 or later)
 
-# Then in your terminal change directory to where you saved that .tgz file (or just move the file to your home folder), then use: 
+wget http://apache.mirrors.ionfish.org/spark/spark-2.2.0/spark-2.2.0-bin-hadoop2.7.tgz
 
 tar xvf spark-2.2.0-bin-hadoop2.7.tgz
 
@@ -139,3 +137,16 @@ println(“Spark shell is running”)
 # That’s it! You should now have Spark running on your computer.
 
 ### Spark ###
+
+
+
+
+
+### SBT ###
+
+wget http://scalasbt.artifactoryonline.com/scalasbt/sbt-native-packages/org/scala-sbt/sbt//0.12.3/sbt.deb
+sudo dpkg -i sbt.deb
+sudo apt-get -y update
+sudo apt-get -y install sbt
+
+### SBT ###
