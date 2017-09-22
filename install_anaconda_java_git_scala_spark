@@ -1,19 +1,46 @@
+# note that python2 and python3 come installed by default with Ubuntu
 
 
-# python2 and python3 are installed by default
+
+
+
+### Anaconda ###
+
+# Go to home directory
+cd ~
+
+# pick version of anaconda to download from (.sh file):  
+# https://repo.continuum.io/archive/
+
+wget https://repo.continuum.io/archive/Anaconda2-4.4.0-Linux-x86_64.sh
 
 # install anaconda
-# go to website and download .sh file to a usp directory
-# open terminal in directory and execute .sh
+bash Anaconda2-4.4.0-Linux-x86_64.sh -b -p ~/anaconda
 
-# install jupypter
-sudo pip install jupyter
+# delete installer
+rm Anaconda2-4.4.0-Linux-x86_64.sh
+
+# save path
+echo 'export PATH="~/anaconda/bin:$PATH"' >> ~/.bashrc 
+
+# Refresh basically
+source .bashrc
+
+# update anaconda
+conda update conda
+
+# check that installation was successful by launching jupyter
+jupyter notebook
+
+### Anaconda ###
 
 
 
 
-# Installing Scala and Spark on Ubuntu.Linux
 
+
+
+### Java ###
 
 # Step 1: Installing Java
 # Check to see if Java is already installed by typing:
@@ -34,6 +61,14 @@ sudo apt-get install default-jdk
 
 # Continue with “Y”.
 
+### Java ###
+
+
+
+
+
+
+### Scala ###
 
 # Step 2: Install Scala
 
@@ -51,11 +86,28 @@ println(“Hello World”)
 
 :q
 
+### Scala ###
 
-#Step 3: Install Spark
-# Next its time to install Spark. We need git for this, so in your terminal type:
+
+
+
+
+
+### Git ###
 
 sudo apt-get install git
+
+### Git ###
+
+
+
+
+
+
+### Spark ###
+
+#Step 3: Install Spark
+# Next its time to install Spark.
 
 # Go to 																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
 # Download a pre-built for Hadoop 2.7 version of Spark (preferably Spark 2.0 or later). 
@@ -86,6 +138,4 @@ println(“Spark shell is running”)
 
 # That’s it! You should now have Spark running on your computer.
 
-
-
-
+### Spark ###
