@@ -1,23 +1,28 @@
 # Go to home directory
 cd ~
 
-# You can change what anaconda version you want at 
+# pick version of anaconda to download from (.sh file):  
 # https://repo.continuum.io/archive/
 
 wget https://repo.continuum.io/archive/Anaconda2-4.4.0-Linux-x86_64.sh
 
+# install anaconda
 bash Anaconda2-4.4.0-Linux-x86_64.sh -b -p ~/anaconda
 
+# delete installer
 rm Anaconda2-4.4.0-Linux-x86_64.sh
 
+# save path
 echo 'export PATH="~/anaconda/bin:$PATH"' >> ~/.bashrc 
 
 # Refresh basically
 source .bashrc
 
+# update anaconda
 conda update conda
 
-
+# check that installation was successful by launching jupyter
+jupyter notebook
 
 
 
