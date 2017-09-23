@@ -9,7 +9,7 @@
 # Go to home directory
 cd ~
 
-# pick version of anaconda to download from (.sh file):  
+# pick version of anaconda to download from (.sh file):
 # https://repo.continuum.io/archive/
 
 wget https://repo.continuum.io/archive/Anaconda2-4.4.0-Linux-x86_64.sh
@@ -21,7 +21,7 @@ bash Anaconda2-4.4.0-Linux-x86_64.sh -b -p ~/anaconda
 rm Anaconda2-4.4.0-Linux-x86_64.sh
 
 # save path
-echo 'export PATH="~/anaconda/bin:$PATH"' >> ~/.bashrc 
+echo 'export PATH="~/anaconda/bin:$PATH"' >> ~/.bashrc
 
 # Refresh basically
 source .bashrc
@@ -111,6 +111,42 @@ git clone https://github.com/your_username/repository
 
 
 
+
+
+### PySpark ###
+
+# install pyspark
+pip install pyspark
+
+# edit bashrc file
+gedit ~/.bashrc
+
+# add to end of file
+export SPARK_HOME=/home/fqaiser94/spark-2.2.0-bin-hadoop2.7
+export PATH=$SPARK_HOME/bin:$PATH
+
+# close file
+
+# quit terminal
+exit
+
+# reopen terminal
+# ctrl + alt + t
+
+# try running pyspark
+pyspark
+
+### PySpark ###
+
+
+
+
+
+
+
+
+
+
 ### Spark ###
 
 # Go to home directory
@@ -136,7 +172,7 @@ cd bin
 ./spark-shell
 
 # and you should see the spark shell pop up
-# this is where you can load .scala scripts. 
+# this is where you can load .scala scripts.
 # You can confirm that this is working by typing something like:
 
 println(“Spark shell is running”)
