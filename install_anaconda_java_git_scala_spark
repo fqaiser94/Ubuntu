@@ -1,4 +1,41 @@
-# note that python2 and python3 come installed by default with Ubuntu
+
+
+
+
+
+
+
+
+### Python setup ###
+
+# python2 and python3 come installed by default with Ubuntu
+
+# install pip
+sudo apt install python3-pip
+
+# upgrade pip to latest version
+pip3 install --upgrade pip
+
+# install python3-tk (dunno why this doesn't come with Ubuntu by default)
+sudo apt-get install python3-tk
+
+# install my favourite packages
+# note the use of 'pip3' (which is applicable to python3)
+# rather than 'pip' (which is applicable to python2)
+
+pip3 install jupyter --user
+
+pip3 install pandas
+pip3 install missingno --user
+
+pip3 install sklearn --user
+
+pip3 install dask[complete] --user
+
+### Python setup ###
+
+
+
 
 
 
@@ -57,18 +94,7 @@ ipython kernel install --user --name=python3.5
 
 
 
-### Common Python packages ###
 
-# note the use of 'pip3' (which is applicable to python3)
-# rather than 'pip' (which is applicable to python2)
-
-pip3 install --upgrade pip
-
-pip3 install pandas
-pip3 install dask[complete] --user
-pip3 install missingno --user
-
-### Common Python packages ###
 
 
 
