@@ -7,14 +7,20 @@ sudo apt-get install libxss1 libappindicator1 libindicator7
 
 ### Chrome Web Browser ###
 
+# This installs a needed library for Google Chrome
+sudo apt-get install -f
+
 # download latest stable version of chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 # install chrome
 sudo dpkg -i google-chrome*.deb
 
+# launch to test if installation was successful
+google-chrome 
+
 # delete chrome installer
-#
+rm google-chrome*.deb
 
 ### Chrome Web Browser ###
 
@@ -27,15 +33,15 @@ sudo dpkg -i google-chrome*.deb
 ### Atom IDE ###
 
 # add repository
-
 sudo add-apt-repository ppa:webupd8team/atom
 
 # update repository
-
 sudo apt-get update
 
 # install Atom
-
 sudo apt-get install atom
+
+# launch to test if installation was successful
+atom 
 
 ### Atom IDE ###
