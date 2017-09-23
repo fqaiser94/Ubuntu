@@ -23,7 +23,7 @@ rm Anaconda2-4.4.0-Linux-x86_64.sh
 # save path
 echo 'export PATH="~/anaconda/bin:$PATH"' >> ~/.bashrc
 
-# Refresh basically
+# refresh basically
 source .bashrc
 
 # update anaconda
@@ -34,6 +34,23 @@ jupyter notebook
 
 ### Anaconda ###
 
+
+
+
+
+
+
+### Jupyter ###
+
+# Although Anaconda installs Jupyter
+# the Python3 kernel is unavailable by default
+
+conda create -n py35 python=3.5
+source activate py35
+conda install notebook ipykernel
+ipython kernel install --user --name=python3.5
+
+### Jupyter ###
 
 
 
@@ -104,7 +121,6 @@ git config --global user.email "your_email"
 
 # save credentials for an hour at a time
 git config --global credential.helper 'cache --timeout=3600'
-
 
 # clone a repository
 git clone https://github.com/your_username/repository
