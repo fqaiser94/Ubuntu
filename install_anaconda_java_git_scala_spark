@@ -95,7 +95,14 @@ println(“Hello World”)
 
 ### Git ###
 
+# install
 sudo apt-get install git
+
+# configure for use
+git config --global user.name "your_username"
+git config --global user.email "your_email"
+
+git clone https://github.com/your_username/repository
 
 ### Git ###
 
