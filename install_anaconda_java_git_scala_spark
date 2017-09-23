@@ -57,6 +57,23 @@ ipython kernel install --user --name=python3.5
 
 
 
+### Common Python packages ###
+
+# note the use of 'pip3' (which is applicable to python3)
+# rather than 'pip' (which is applicable to python2)
+
+pip3 install --upgrade pip
+
+pip3 install pandas
+pip3 install dask[complete]
+
+### Common Python packages ###
+
+
+
+
+
+
 ### Java ###
 
 # Step 1: Installing Java
