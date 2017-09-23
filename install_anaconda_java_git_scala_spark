@@ -102,6 +102,11 @@ sudo apt-get install git
 git config --global user.name "your_username"
 git config --global user.email "your_email"
 
+# save credentials for an hour at a time
+git config --global credential.helper 'cache --timeout=3600'
+
+
+# clone a repository
 git clone https://github.com/your_username/repository
 
 ### Git ###
