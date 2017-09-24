@@ -17,7 +17,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*.deb
 
 # launch to test if installation was successful
-google-chrome 
+google-chrome
 
 # delete chrome installer
 rm google-chrome*.deb
@@ -26,6 +26,13 @@ rm google-chrome*.deb
 
 
 
+
+### Unity tweak ###
+
+# use this in particular to move launcher to bottom
+sudo apt-get install unity-tweak-tool
+
+### Unity tweak ###
 
 
 
@@ -42,6 +49,6 @@ sudo apt-get update
 sudo apt-get install atom
 
 # launch to test if installation was successful
-atom 
+atom
 
 ### Atom IDE ###
