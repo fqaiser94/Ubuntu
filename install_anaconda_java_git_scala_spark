@@ -31,6 +31,7 @@ pip3 install missingno --user
 pip3 install sklearn --user
 
 pip3 install dask[complete] --user
+pip3 install graphviz --user
 
 ### Python setup ###
 
