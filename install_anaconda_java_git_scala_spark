@@ -337,7 +337,6 @@ print(sess.run(hello))
 
 # If the system outputs the following
 # then you are ready to begin writing TensorFlow programs:
-
-Hello, TensorFlow!
+# Hello, TensorFlow!
 
 ### Tensorflow ###
