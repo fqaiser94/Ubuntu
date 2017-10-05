@@ -310,3 +310,16 @@ sudo apt-get -y update
 sudo apt-get -y install sbt
 
 ### SBT ###
+
+
+
+
+
+
+
+### Tensorflow ###
+
+# Python 3.n; CPU support (no GPU support)
+sudo pip3 install tensorflow
+
+### Tensorflow ###
