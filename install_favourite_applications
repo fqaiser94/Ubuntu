@@ -52,3 +52,19 @@ sudo apt-get install atom
 atom
 
 ### Atom IDE ###
+
+
+
+
+### Pycharm IDE ###
+
+# unpack (to recommended directory)
+sudo tar xf pycharm-community-*.tar.gz -C /opt/
+
+# cd to directory
+cd /opt/pycharm-community-2017.2.3/bin
+
+# install
+./pycharm.sh
+
+### Pycharm IDE ###
