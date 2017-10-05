@@ -58,6 +58,8 @@ atom
 
 ### Pycharm IDE ###
 
+# download .tar from pycharm website
+
 # unpack (to recommended directory)
 sudo tar xf pycharm-community-*.tar.gz -C /opt/
 
