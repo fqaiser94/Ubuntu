@@ -70,3 +70,17 @@ cd /opt/pycharm-community-2017.2.3/bin
 ./pycharm.sh
 
 ### Pycharm IDE ###
+
+
+
+
+
+
+
+
+### VirtualBox ###
+
+sudo apt-get install virtualbox
+
+### VirtualBox ###
+
