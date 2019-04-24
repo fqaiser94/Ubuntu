@@ -1,2 +1,3 @@
-# Ubuntu
-Code for setting up Ubuntu 16.04 LTS
+install Java
+install Spark
+install Zeppelin
