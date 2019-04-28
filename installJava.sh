@@ -1,5 +1,5 @@
-sudo add-apt-repository ppa:openjdk-r/ppa
-sudo apt-get update
-sudo apt-get install openjdk-8-jdk
-sudo update-alternatives --config java
+add-apt-repository ppa:openjdk-r/ppa
+apt-get update
+apt-get install -y openjdk-8-jdk
+# update-java-alternatives --set java-1.8.0-openjdk-amd64
 java -version
