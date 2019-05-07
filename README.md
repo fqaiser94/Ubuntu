@@ -9,7 +9,6 @@ installScala.sh
 installSbt.sh  
 installSpark.sh  
 installZeppelin.sh git.remote.url git.remote.username git.remote.access-token cloneNotebooksToDir
-# e.g. sh installZeppelin.sh https:\\/\\/github.com\\/fqaiser94\\/zeppelin-notes.git fqaiser94 accessToken  ~/
 installR.sh  
 installPythonPackages.sh 
 ```
