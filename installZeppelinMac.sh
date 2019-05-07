@@ -1,6 +1,9 @@
 # example usage: 
 # sudo sh installZeppelinMac.sh https://github.com/fqaiser94/zeppelin-notes.git fqaiser94 accessToken  ~/zeppelinNotes
 
+# helpful link
+# https://www.datageekinme.com/setup/setting-up-my-mac-zeppelin/
+
 gitUrl=$1
 gitUsername=$2
 gitAccessToken=$3
