@@ -31,6 +31,7 @@ sh installZeppelinMac.sh git.remote.url git.remote.username git.remote.access-to
 ```
 
 ## zeppelin commands
+Remember to always start Zeppelin from home directory. Otherwise zeppelin will try to find files relative to wherever you started Zeppelin from. 
 ```
 zep-start
 zep-stop
