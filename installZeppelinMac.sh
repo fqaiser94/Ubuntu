@@ -14,6 +14,8 @@ brew install apache-zeppelin
 ZEPPELIN_HOME=/usr/local/Cellar/apache-zeppelin/0.8.1
 
 # copy over templates
+mv $ZEPPELIN_HOME/libexec/conf/zeppelin-env.sh.template $ZEPPELIN_HOME/libexec/conf/zeppelin-env.sh
+echo 'export SPARK_HOME=~/spark' >> $ZEPPELIN_HOME/libexec/conf/zeppelin-env.sh
 cp -r templates/interpreter.json.template $ZEPPELIN_HOME/libexec/conf/interpreter.json
 cp -r templates/zeppelin-site.xml.template $ZEPPELIN_HOME/libexec/conf/zeppelin-site.xml
 sed -i '' "s|usp.git.remote.url|$gitUrl|g" $ZEPPELIN_HOME/libexec/conf/zeppelin-site.xml
