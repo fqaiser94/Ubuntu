@@ -1,5 +1,5 @@
 # example usage: 
-# sudo sh installZeppelinMac.sh https://github.com/fqaiser94/zeppelin-notes.git fqaiser94 accessToken  ~/zeppelinNotes
+# sh installZeppelinMac.sh https://github.com/fqaiser94/zeppelin-notes.git fqaiser94 accessToken  ~/zeppelinNotes
 
 # helpful link
 # https://www.datageekinme.com/setup/setting-up-my-mac-zeppelin/
@@ -14,12 +14,12 @@ brew install apache-zeppelin
 ZEPPELIN_HOME=/usr/local/Cellar/apache-zeppelin/0.8.1
 
 # copy over templates
-mv $ZEPPELIN_HOME/libexec/conf/zeppelin-env.sh.template $ZEPPELIN_HOME/libexec/conf/zeppelin-env.sh
-echo 'export SPARK_HOME=~/spark' >> $ZEPPELIN_HOME/libexec/conf/zeppelin-env.sh
-cp -r templates/interpreter.json.template $ZEPPELIN_HOME/libexec/conf/interpreter.json
-cp -r templates/zeppelin-site.xml.template $ZEPPELIN_HOME/libexec/conf/zeppelin-site.xml
-sed -i '' "s|usp.git.remote.url|$gitUrl|g" $ZEPPELIN_HOME/libexec/conf/zeppelin-site.xml
-sed -i '' "s|uspNotebookDir|$notebookDir|g" $ZEPPELIN_HOME/libexec/conf/zeppelin-site.xml
+sudo mv $ZEPPELIN_HOME/libexec/conf/zeppelin-env.sh.template $ZEPPELIN_HOME/libexec/conf/zeppelin-env.sh
+sudo echo 'export SPARK_HOME=~/spark' >> $ZEPPELIN_HOME/libexec/conf/zeppelin-env.sh
+sudo cp -r templates/interpreter.json.template $ZEPPELIN_HOME/libexec/conf/interpreter.json
+sudo cp -r templates/zeppelin-site.xml.template $ZEPPELIN_HOME/libexec/conf/zeppelin-site.xml
+sudo sed -i '' "s|usp.git.remote.url|$gitUrl|g" $ZEPPELIN_HOME/libexec/conf/zeppelin-site.xml
+sudo sed -i '' "s|uspNotebookDir|$notebookDir|g" $ZEPPELIN_HOME/libexec/conf/zeppelin-site.xml
 
 # download gitUrl repo
 git clone ${gitUrl} $notebookDir
@@ -31,4 +31,5 @@ echo "alias zep-status='sudo $ZEPPELIN_HOME/bin/zeppelin-daemon.sh status'" >> /
 echo "alias zep-restart='sudo $ZEPPELIN_HOME/bin/zeppelin-daemon.sh restart'" >> /etc/profile
 
 source /etc/profile
+cd ~
 zep-start
